@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="soccer-field.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>F1 Manager Ultimate</title>
+    <style>
+        #formbox{
+            border:2px solid rgb(186, 38, 38);
+            background-color: rgb(87, 172, 108);
+            opacity:0.9;
+            float:right;
+            margin:150px,5px,15px,150px;
+            border-radius: 15px;
+        }
+        .homeImage{
+            margin-left: 20px;
+        }
+        hr.h1{
+           border: 1px solid rgb(161, 41, 41);
+        }
+        .log img{
+            height:80px;
+        }
+        
+
+
+
+        
+
+    </style>
+</head>
+<body  class=" bg-cover bg-fixed bg-[url('https://media.formula1.com/image/upload/f_auto/q_auto/v1684313425/Frontier-F1-Manager-2023.jpg')]">
+    
+    <nav class="flex items-center justify-between bg-black">
+        <div class="log">
+            <img src="logo.jpeg" alt="">
+        </div>
+
+        <div class="hidden md:flex items-center">
+            
+
+            <a href="/login"  id="btnLogin" class="p-2 px-5 mx-2 text-white border-2 border-white" >Login</a>
+            <a href="/register" id="btnRegister" class="p-3 pt-3 px-6 text-white mx-2 rounded-full">Register</a>
+            {{#if sucessRegister}}
+                <script>
+                    const btnLogin = document.getElementById("btnLogin");
+                    const btnRegister = document.getElementById("btnRegister");
+                    const afterlogin = document.getElementById("form-box");
+                   
+                    btnLogin.style.display = "none";
+                    btnRegister.style.display = "none";
+
+    
+                  
+
+                </script>
+             <a href="/register"  id="" class="p-2 px-3 mx-2 text-white border-2 border-white" >Log Out</a>  
+            {{/if}}
+
+            {{#if sucessLogin}}
+                <script>
+                    const btnLogin = document.getElementById("btnLogin");
+                    const btnRegister = document.getElementById("btnRegister");
+                    const afterlogin = document.getElementById("formbox");
+
+                    btnLogin.style.display = "none";
+                    btnRegister.style.display = "none";
+
+                    
+                </script>
+
+             <a href="/register"  id="" class="p-2 px-3 mx-2 text-white border-2 border-white" >Log Out</a>  
+            {{/if}}
+        </div>
+    </nav>
+
+    <section>
+
+
+        <div class="">
+            
+
+            {{!-- <div  class="object-cover ">
+                <img id="homeImage" src="1495644684fc-barcelona-2017-png-clipart.png">
+            </div> --}}
+
+            <div id="formbox" class="grid my-2 ">
+                <a  class="font-black my-2 text-center p-3 pt-3 px-6  mx-20 rounded-xl bg-brightRed hover:bg-brightRed" href='/newmanager'>Create New Team</a>
+                <hr  class="h1">
+                <a  class="font-black my-2 text-center p-3 pt-3 px-6  mx-20 rounded-xl bg-brightRed hover:bg-brightRedLight" href="/myteam">My Team</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

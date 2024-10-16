@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Contract</title>
+    <link rel="stylesheet" href="signContract.css">
+    <link rel="stylesheet" href="playerCard.css">
+
+
+</head>
+<body>
+
+    <div class="maindiv">
+
+        {{#res}}
+
+        <div class="card">
+          <div id="player-image" class="card-image" style="background-image: url({{image}});">
+        </div>
+        <h2 id="player-name">{{pname}}</h2>
+         <ul>
+            <li id="player-country" class="list">{{country}}</li>
+            <li id="player-position" class="list">{{position}}</li>
+            <li id="player-rating" class="list">{{rating}}</li>
+         </ul>
+        </div>
+
+        {{/res}}
+
+
+        <div id="f2" class="formField2">
+            <form class="formchild" action="/signplayerwithpos" method="">
+                <h1 id="formHeading"  class="form-heading">𝐄𝐧𝐭𝐞𝐫 Player Position</h1>
+                <select name="position" class="form-input" >
+                    <option value="soft">Soft</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="inter">Inter</option>
+                    <option value="wet">Wet</option>
+                    <option value="sub1">Sub1</option>
+                    <option value="sub2">Sub2</option>
+                </select>
+                <button  id="btnSubmitname" class="form-submit"><a>Sign Contract</a></button>                
+            </form>
+        </div>
+
+        
+
+
+
+    </div>
+
+
+{{!-- confetti  --}}
+
+  <div class="confetti-land">
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  </div>
+
+
+
+
+
+    <script src="signContract.js"></script>
+</body>
+</html>

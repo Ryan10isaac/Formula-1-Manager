@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="globalplayers.css">
+    <link rel="stylesheet" href="playerCard.css">
+</head>
+<body>
+    
+    <section >
+
+        <ul id="plist" class="player-list">
+
+            <li>
+                <div class="addplayerbtn"><a href="/addnewplayers">Add Players</a></div>
+                
+            </li>
+
+
+                {{#each res}}
+                    <div class="card">
+                    <div id="card-image" class="card-image" style="background-image: url({{this.image}});">
+                    </div>
+                    <h2 id="pname">{{this.pname}}</h2>
+                    <ul>
+                        <li id="pPosition" class="list">Position: {{this.position}}</li>
+                        <li id="pCountry" class="list">Country:{{this.country}}</li>
+                        <li id="pRating" class="list">Rating: {{this.rating}}</li>
+                        <button class=btnSignContract"><a href="/signnewplayer?pid={{this.pid}}">Sign Contract</a></button>
+                    </ul>
+                    </div>
+                {{/each}}   
+         
+        </ul>
+
+
+    </section>
+
+
+    <script src="globalplayers.js"></script>
+
+
+</body>
+</html>

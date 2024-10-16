@@ -1,0 +1,44 @@
+.card{
+    margin: 1rem;
+}
+
+.player-list{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.player-list li{
+    list-style-type:none;
+}
+
+body{
+    
+    background-image:url("https://images.pexels.com/photos/10807493/pexels-photo-10807493.jpeg");
+    /* background-image: linear-gradient(to right,black, #270C39); */
+    background-position: center;
+    background-size:cover;
+}
+
+.addplayerbtn{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+
+}
+a{
+    display: block;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color:white;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    /* padding: 10px; */
+    letter-spacing: 2px;
+    transition: all .25s;
+  }
+  
+  a:hover{
+    letter-spacing: 10px;
+  }

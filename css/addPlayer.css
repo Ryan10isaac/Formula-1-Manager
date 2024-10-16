@@ -1,0 +1,10 @@
+#form-container {
+    width: 100%; 
+    text-align: center;
+   border-color: black;
+   border-radius: 10px;
+   font-size: 32px;
+   color: aliceblue;
+   background-color: aquamarine;
+   border-width: 5px;
+  }
